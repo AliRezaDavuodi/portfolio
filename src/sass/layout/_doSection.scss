@@ -1,0 +1,46 @@
+.do {
+  padding: 1rem 5rem;
+  position: relative;
+
+  &__leaf {
+    position: absolute;
+
+    img {
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+
+  &__leaf--top {
+    width: 25rem;
+    height: 33rem;
+    top: -5rem;
+    left: -12rem;
+  }
+
+  &__leaf--bottom {
+    width: 38rem;
+    height: 43rem;
+    bottom: 5rem;
+    right: -20rem;
+  }
+
+  &__item {
+    @include flex;
+    justify-content: space-around;
+
+    @include respond(md) {
+      flex-direction: column;
+      text-align: center;
+    }
+  }
+
+  &__details {
+    padding: 2rem;
+    margin: 5rem 0;
+
+    @include respond(md) {
+      order: 2;
+    }
+  }
+}

@@ -1,0 +1,25 @@
+.btn {
+  &,
+  &:link,
+  &:visited {
+    display: inline-block;
+    text-decoration: none;
+    color: $white;
+    background-color: $btnColor;
+    border-radius: 10rem;
+    padding: 0.8rem 2rem;
+    transition: all 0.2s;
+    font-family: $questrialFont;
+    box-shadow: 0 1rem 2rem rgba($black, 0.2);
+  }
+
+  &:hover {
+    transform: translateY(-0.5rem);
+    box-shadow: 0 1rem 2rem rgba($black, 0.4);
+  }
+
+  &:active {
+    transform: translateY(-0.2rem);
+    box-shadow: 0 1rem 2rem rgba($black, 0.3);
+  }
+}

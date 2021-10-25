@@ -1,0 +1,17 @@
+.img {
+  width: 50%;
+  padding: 0 5rem 5rem;
+  z-index: 20;
+  img {
+    max-width: 100%;
+    object-fit: cover;
+
+    @include respond(md) {
+      width: 100%;
+    }
+  }
+
+  @include respond(md) {
+    width: 100%;
+  }
+}

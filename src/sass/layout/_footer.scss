@@ -1,0 +1,78 @@
+.footer {
+  padding: 5rem 10rem;
+  height: 100vh;
+  position: relative;
+
+  &__image {
+    display: none;
+
+    @include respond(md) {
+      display: block;
+    }
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    top: 0;
+    right: -12rem;
+    background-image: url(../img/Contact.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom left;
+
+    @include respond(md) {
+      display: none;
+    }
+  }
+
+  &__leaf {
+    position: absolute;
+    width: 25rem;
+    height: 33rem;
+    top: 25rem;
+    left: -13rem;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding-left: 10rem;
+    width: 50%;
+    height: 100%;
+
+    @include respond(md) {
+      width: 100%;
+      text-align: center;
+      padding-left: 0;
+    }
+
+    &--details {
+      padding: 1rem;
+      @include respond(md) {
+        text-align: center;
+      }
+    }
+
+    &--social {
+      @include flex;
+      padding: 0.5rem 1.5rem;
+
+      @include respond(md) {
+        justify-content: center;
+      }
+
+      img {
+        width: 1.5rem;
+        height: 1.5rem;
+
+        &:not(:last-child) {
+          margin-right: 2rem;
+        }
+      }
+    }
+  }
+}

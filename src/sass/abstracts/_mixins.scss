@@ -1,0 +1,33 @@
+@mixin flex {
+  display: flex;
+  align-items: center;
+}
+
+/* 
+0 - 600 sm
+600 - 900 md
+900 - 1200 big
+*/
+
+@mixin respond($bp) {
+  @if $bp == sm {
+    @media only screen and (max-width: 37.5em) {
+      // 600 px / 16
+      @content;
+    }
+  }
+
+  @if $bp == md {
+    @media only screen and (max-width: 56.25em) {
+      // 900 px / 16
+      @content;
+    }
+  }
+
+  @if $bp == big {
+    @media only screen and (max-width: 75em) {
+      // 1200 px / 16
+      @content;
+    }
+  }
+}
