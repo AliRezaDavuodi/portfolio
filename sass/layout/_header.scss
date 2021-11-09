@@ -8,8 +8,8 @@
     position: absolute;
     width: 50%;
     height: 100%;
-    top: 0;
-    right: -5rem;
+    top: -20%;
+    right: 0;
     background-image: url(../../img/headerbag.svg);
     background-size: 145%;
     background-repeat: no-repeat;
@@ -39,11 +39,19 @@
     background-color: $lightGreen;
     font-size: 2.9rem;
     font-family: $robotoFont;
+
+    @media only screen and (max-width: 576px) {
+      margin: 0 auto;
+    }
   }
 
   &__items {
     display: flex;
     justify-content: flex-end;
+
+    @media only screen and (max-width: 576px) {
+      justify-content: center;
+    }
   }
 
   &__list {
@@ -85,12 +93,18 @@
       position: absolute;
       top: 5rem;
       left: 8rem;
+
+      @media only screen and (max-width: 576px) {
+        top: 0;
+        left: 0;
+        display: inline-block;
+      }
     }
   }
 
   &__main {
     padding: 5rem 10rem;
-    height: 100vh;
+    min-height: 100vh;
 
     @include respond(sm) {
       padding: 0;
@@ -101,6 +115,9 @@
       flex-direction: column;
       justify-content: center;
       padding: 2rem;
+    }
+    &--container {
+      min-height: 100vh;
     }
   }
 

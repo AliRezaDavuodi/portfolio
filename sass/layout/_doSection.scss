@@ -1,6 +1,7 @@
 .do {
   padding: 1rem 5rem;
   position: relative;
+  overflow-x: hidden;
 
   &__leaf {
     position: absolute;
@@ -41,6 +42,12 @@
 
     @include respond(md) {
       order: 2;
+    }
+  }
+
+  &__img {
+    @media only screen and (max-width: 576px) {
+      order: -1;
     }
   }
 }
