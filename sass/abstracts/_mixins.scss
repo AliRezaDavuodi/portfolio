@@ -3,12 +3,6 @@
   align-items: center;
 }
 
-/* 
-0 - 600 sm
-600 - 900 md
-900 - 1200 big
-*/
-
 @mixin respond($bp) {
   @if $bp == sm {
     @media only screen and (max-width: 37.5em) {

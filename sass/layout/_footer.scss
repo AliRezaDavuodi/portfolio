@@ -34,6 +34,7 @@
         top: 0;
         left: 0;
         display: inline-block;
+        transform: scale(1.2);
       }
     }
   }
@@ -51,7 +52,8 @@
     background-position: bottom left;
 
     @include respond(md) {
-      display: none;
+      opacity: 0;
+      visibility: hidden;
     }
   }
 

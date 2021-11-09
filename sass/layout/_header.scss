@@ -3,7 +3,7 @@
   padding: 5rem 10rem;
   position: relative;
 
-  &::after {
+  &::before {
     content: "";
     position: absolute;
     width: 50%;
@@ -16,8 +16,8 @@
     background-position: bottom left;
     z-index: -1;
 
-    @include respond(md) {
-      display: none;
+    @include respond(big) {
+      opacity: 0;
     }
   }
 
@@ -91,7 +91,7 @@
     img {
       width: 100%;
       position: absolute;
-      top: 5rem;
+      top: 10rem;
       left: 8rem;
 
       @media only screen and (max-width: 576px) {
