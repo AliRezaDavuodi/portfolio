@@ -87,14 +87,22 @@
     &--social {
       @include flex;
       padding: 0.5rem 1.5rem;
+      padding-left: 12rem;
 
       @include respond(md) {
         justify-content: center;
+        padding-left: 0rem;
       }
 
-      img {
-        width: 1.5rem;
-        height: 1.5rem;
+      i {
+        font-size: 2rem;
+        cursor: pointer;
+        transition: all 0.3s;
+
+        &:hover {
+          color: $lightGreen;
+          transform: scale(1.5) rotate(360deg);
+        }
 
         &:not(:last-child) {
           margin-right: 2rem;

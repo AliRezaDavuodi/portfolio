@@ -138,9 +138,15 @@
         justify-content: center;
       }
 
-      img {
-        width: 1.5rem;
-        height: 1.5rem;
+      i {
+        font-size: 2rem;
+        cursor: pointer;
+        transition: all 0.3s;
+
+        &:hover {
+          color: $lightGreen;
+          transform: scale(1.5) rotate(360deg);
+        }
 
         &:not(:last-child) {
           margin-right: 2rem;
