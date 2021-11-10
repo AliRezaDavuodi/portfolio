@@ -18,6 +18,11 @@
 
     @include respond(big) {
       opacity: 0;
+      visibility: hidden;
+    }
+    @include respond(huge) {
+      opacity: 0;
+      visibility: hidden;
     }
   }
 
@@ -42,6 +47,7 @@
 
     @media only screen and (max-width: 576px) {
       margin: 0 auto;
+      margin-bottom: 2rem;
     }
   }
 

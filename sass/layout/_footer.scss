@@ -30,6 +30,7 @@
       position: absolute;
       right: 0;
       top: 0;
+
       @media only screen and (max-width: 576px) {
         top: 0;
         left: 0;
@@ -52,6 +53,10 @@
     background-position: bottom left;
 
     @include respond(md) {
+      opacity: 0;
+      visibility: hidden;
+    }
+    @include respond(huge) {
       opacity: 0;
       visibility: hidden;
     }
