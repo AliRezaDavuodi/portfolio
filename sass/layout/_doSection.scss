@@ -46,7 +46,7 @@
   }
 
   &__img {
-    @media only screen and (max-width: 576px) {
+    @include respond(md) {
       order: -1;
     }
   }

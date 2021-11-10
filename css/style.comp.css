@@ -124,7 +124,7 @@ body {
     @media only screen and (max-width: 56.25em) {
       .do__details {
         order: 2; } }
-  @media only screen and (max-width: 576px) {
+  @media only screen and (max-width: 56.25em) {
     .do__img {
       order: -1; } }
 
@@ -372,7 +372,7 @@ body {
   .work__item {
     padding: 2rem;
     width: 45%;
-    height: 45rem;
+    height: 50rem;
     margin: 0 2rem;
     border-radius: 2rem;
     box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.2);
@@ -393,11 +393,9 @@ body {
       width: 100%;
       height: 100%;
       object-fit: cover;
-      transform: scale(1.5); }
-      @media only screen and (max-width: 56.25em) {
-        .work__img img {
-          transform: scale(1.1); } }
+      transform: scale(1.1); }
   .work__btn {
     display: flex;
     align-items: center;
-    justify-content: center; }
+    justify-content: center;
+    margin-top: 10rem; }
