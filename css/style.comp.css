@@ -243,7 +243,7 @@ body {
       .header::before {
         opacity: 0;
         visibility: hidden; } }
-    @media only screen and (min-width: 93.75em) {
+    @media only screen and (max-width: 75em) {
       .header::before {
         opacity: 0;
         visibility: hidden; } }
