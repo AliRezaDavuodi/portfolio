@@ -16,7 +16,7 @@
     background-position: bottom left;
     z-index: -1;
 
-    @include respond(big) {
+    @include respond(md) {
       opacity: 0;
       visibility: hidden;
     }
