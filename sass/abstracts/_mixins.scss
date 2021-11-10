@@ -25,8 +25,8 @@
     }
   }
   @if $bp == huge {
-    @media only screen and (min-width: 81.25em) {
-      // 1300 px + / 16
+    @media only screen and (min-width: 93.75em) {
+      // 1500+ px / 16
       @content;
     }
   }

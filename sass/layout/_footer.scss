@@ -1,12 +1,11 @@
 .footer {
   padding: 5rem 10rem;
-  height: 100vh;
+  min-height: 100vh;
   position: relative;
   overflow-x: hidden;
 
   &__container {
     height: 100%;
-    align-items: stretch;
 
     &--content {
       height: 100%;
@@ -28,14 +27,14 @@
       margin: 0 auto;
       width: 60%;
       position: absolute;
-      right: 0;
-      top: 0;
+      left: 50%;
+      top: 100%;
 
-      @media only screen and (max-width: 576px) {
-        top: 0;
-        left: 0;
-        display: inline-block;
-        transform: scale(1.2);
+      @media only screen and (max-width: 768px) {
+        margin-top: 2rem;
+        top: 100%;
+        transform: translate(-50%, 0) scale(1.2);
+        width: 100%;
       }
     }
   }
@@ -44,8 +43,8 @@
     content: "";
     position: absolute;
     height: 100%;
-    width: 48%;
-    top: 0;
+    width: 50%;
+    top: 0%;
     right: -12rem;
     background-image: url(../img/footerbg.svg);
     background-size: cover;
@@ -75,11 +74,13 @@
     flex-direction: column;
     justify-content: flex-end;
     padding-left: 10rem;
+    margin-top: 10rem;
 
     @include respond(md) {
       width: 100%;
       text-align: center;
       padding-left: 0;
+      margin-top: 0rem;
     }
 
     &--details {
